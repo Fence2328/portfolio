@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio de Christian</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="java.js"></script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="java.js"></script>
+
+
+<body>
+  <header>
+    <div class="logo-nav">
+      <img src="mon logo.png" alt="Logo de Christian" class="logo">
+      <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <h1 class="reveal-top">Christian — Développeur Web</h1>
+  </header>
+
+  <section id="accueil">
+    <h2 class="section-title">Bienvenue sur mon portfolio !</h2>
+    <p class="reveal-bottom">Je suis Christian, passionné par le web et la création de sites modernes, performants et accessibles.</p>
+  </section>
+
+  <section id="apropos">
+    <h2 class="section-title">À propos</h2>
+    <p>Autodidacte et curieux, j'aime concevoir des expériences web qui allient esthétique et efficacité. Chaque projet est une opportunité d'apprendre et de repousser mes limites.</p>
+  </section>
+
+  <section id="services" class="reveal-left">
+    <h2>Mes Services</h2>
+    <div class="service-card">
+      <h3>Création de site vitrine</h3>
+      <p>Je conçois des sites modernes, rapides et adaptés à tous les écrans pour présenter votre activité.</p>
+    </div>
+    <div class="service-card">
+      <h3>Développement d'application web</h3>
+      <p>Des applications sur mesure selon vos besoins : gestion, réservation, tableau de bord, etc.</p>
+    </div>
+    <div class="service-card">
+      <h3>Refonte & optimisation</h3>
+      <p>Modernisation d’un ancien site, amélioration du design, SEO, et performance technique.</p>
+    </div>
+  </section>
+  
+
+  <section id="realisations">
+    <h2 class="section-title">Réalisations</h2>
+    <div class="project">
+      <h3>Projet 1 : site web pour l'Agence de Sécurité MRG-GR</h3>
+      <!-- Div pour regrouper les images -->
+      <div class="project-images">
+        <img src="premier.png.png" alt=" projet 1" class="project-image">
+        <img src="deuxieme.png.png" alt="suite" class="project-image">
+      </div>
+      <p>Description du projet, objectifs, technologies utilisées.</p>
+    </div>
+    <div class="project-card">
+      <h3>Multi-Service Togo</h3>
+      <p>Site de dépannage et services avec abonnement pour artisans — moderne, responsive, sécurisé.</p>
+      <a href="#" target="_blank">Voir le projet</a>
+    </div>
+</section>
+
+<section id="contact" class="reveal-right">
+  <h2>Contact</h2>
+  <p>Besoin d’un site ou d’un projet digital ? Discutons-en !</p>
+
+  <h2>Formulaire de contact</h2>
+
+  <form action="https://formspree.io/f/xldbeqar" method="POST">
+    <label>
+      Nom :
+      <input type="text" name="name" required>
+    </label>
+
+    <label>
+      Email :
+      <input type="email" name="email" required>
+    </label>
+
+    <label>
+      Message :
+      <textarea name="message" rows="6" required></textarea>
+    </label>
+
+    <!-- Redirection après soumission -->
+    <input type="hidden" name="_redirect" value="https://tonsite.com/merci.html">
+
+    <button type="submit">Envoyer</button>
+  </form>
+  <p>Email : <span id="email">fencekoeya@gmail.com</span> <button onclick="copyEmail()">Copier</button></p>
+  <p>WhatsApp : <span id="whatsapp-number">+228 92 29 02 65</span> <button onclick="copyWhatsApp()">Copier</button></p>
+</section>
+
+
+
+
+  <footer>
+    <p>&copy; 2025 Christian. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
